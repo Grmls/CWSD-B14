@@ -1,0 +1,599 @@
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+th{
+  font-size: 200%;
+}
+
+td{
+  font-size: 280%;
+}
+h1{
+  color:purple;
+  font-family: "Broadway";
+  font-size: 400%;
+}
+h2, .g1{
+  font-family: "Broadway";
+  color: whitesmoke;
+  
+}
+h8{
+  font-family: "Broadway";
+  color: whitesmoke;
+  font-size: 400%;
+}
+h6{
+  color: black;
+  font-family: "Broadway";
+  font-size: 1.5rem;
+}
+p{
+  font-family: "Century Gothic";
+  font-weight: 700;
+  color: whitesmoke;
+  padding: 10%;
+}
+body {
+font-family: "Poppins", Broadway;
+}
+a:hover {
+  opacity: .6;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+.center {
+  display: flex; /* Use flexbox to center vertically and horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 35vh;
+}
+.icon {
+    height: 45px;
+    width: auto;
+    margin: 10px 0px 0px 0px;
+}
+.searchBar {
+    width: 30%;
+}
+.images {
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 990px) {
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        /* Horizontally center content */
+    }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.btn4 {
+    display: inline-block;
+    padding: 0.5em 4em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 23em;
+    text-transform: uppercase;
+    font-weight: small;
+    margin-left: 25em;
+  }
+  .btn5 {
+    display: inline-block;
+    padding: 0.8em 5em;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-weight: small;
+    margin-left: 0.1em;
+  }
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+  margin-left: 1em;
+}
+.btn-primary {
+  color:black;
+  background: greenyellow;
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background: yellow;
+  transition: 2s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+/* ............//// Showcase styling ////......... */
+.showcase-area {
+  height: 99vh;
+  background:url(ali.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+/* ....../About/...... */
+#about {
+  padding: 50px;
+  background:url(white.jpg);
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -7rem;
+}
+#about h2 {
+  font-size: 2.3rem;
+}
+#about p {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+.about-img {
+  flex: 1 200px;
+  padding: 20px;
+  margin: auto;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+.about-img img {
+  display: block;
+  height: 600px;
+  max-width: 300%;
+  margin-top: 2rem;
+  object-fit: cover;
+  object-position: right;
+}
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+.about-text {
+  flex: 1.1 0 400px;
+  padding: 100px;
+  margin: auto;
+  transform: translate(-100%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* ........./ References /.......... */
+
+#ref {
+  padding: 5rem 0;
+  background:lightgrey;
+}
+
+.ref-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: black;
+}
+
+.ref-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.ref-box .checked {
+  color: #ff9529;
+}
+
+.ref-box .ref-text {
+  margin: 1rem 0;
+  color: #444;
+}
+
+.ref-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* ........ Contact Us........... */
+
+#contact {
+  padding: 5rem 0;
+  background: url(purple.jpg);
+}
+
+.contact-container {
+  display: flex;
+  background:url(purple.jpg);
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+  font-weight: 500;
+  font-family: Century Gothic;
+  font-weight: 700;
+}
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color:whitesmoke;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+  font-family: Century Gothic;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form-container a {
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}
+
+/* ......../ Main/.......... */
+.images {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+
+body {
+    background:url(purple.jpg)
+}
+
+.icon {
+    height: 45px;
+    width: auto;
+    margin: 10px 0px 0px 0px;
+}
+
+.searchBar {
+    width: 60%;
+}
+
+.header-text {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 900;
+    margin: 0;
+}
+    .searchBar {
+        width: 50%;
+}
+
+/* ......../ Skills /.......... */
+.skills-bar {
+  padding: 60px 350px;
+}
+
+.skills-bar .bar {
+  margin: 60px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 20px;
+  color: #f0f0e6;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 20px;
+  width: 900px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.4, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background:purple;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 1, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .java {
+  width: 50%;
+}
+.progress-line .python {
+  width: 40%;
+}
+.progress-line .c{
+  width: 40%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color:black;
+  font-size: 15px;
+  font-weight: 900;
+  background: #f0f0f0;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .java::after {
+  content: "50%";
+}
+.progress-line .python::after {
+  content: "40%";
+}
+.progress-line .c::after {
+  content: "40%";
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.left-content h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+.right-content h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+.contact-content {
+    width: 100%;
+  }
+
+/* ......../ Project /.......... */
+.a1 {
+  display: inline-block;
+  padding: 0.5em 4em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 23em;
+  text-transform: uppercase;
+  font-weight: small;
+  margin-left: 25em;
+  color: black;
+  background-color:greenyellow;
+  font-size: 150%;
+  transition: all .3s;
+}
+
+.lb {
+  padding: 5rem;
+}
+
+.lb > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5rem;
+}
+
+.lb > ul > li {
+  border: 20px solid whitesmoke;
+  border-radius: 5rem;
+  border-style: double;
+}
+
+.lb > ul > li > figure {
+  max-height: 400px;
+  overflow: hidden;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  position: relative;
+}
+
+.lb > ul > li > figure > img {
+  width: 100%;
+}
+
+.lb > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.lb > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: 1.5rem;
+  font-size:2rem;
+  font-weight: 500;
+}
+
+
+.lb > ul > li > a {
+  padding: 0.5rem 4rem;
+  margin-top: -6%;
+  margin-left: 5rem;
+  
+}
+
+.pro > * {
+  color: white;
+}
+
+.pro > article > p {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.pro > article > a {
+  padding: 5rem;
+  margin-top: 2rem;
+}
+a:hover {
+  opacity: .6;
+}
+
